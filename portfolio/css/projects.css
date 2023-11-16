@@ -42,18 +42,9 @@ a {
 }
 nav {
     margin:  0 auto;
-
 }
-.footer-text {
-    font-size: 12px;
-}
-
-  .about-img {
+.projects-img {
     flex-shrink: 0;
     margin-right: 20px;
-    width: 100rem;
-  }
-
-  .about-text {
-    max-width: 400px; /* Limit the width of the text container */
-  }
+    width: 150%;
+}
