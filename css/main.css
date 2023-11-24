@@ -55,8 +55,8 @@ nav {
 }
 
 .about {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -68,27 +68,39 @@ nav {
     width: 100rem;
 }
 
+.center-frog {
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+
+}
+
 
 
 .animation-frog {
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
+    z-index: 99;
+}
+
+.animation-frog:hover {
     animation-name: frog;
     animation-duration: 2s;
+
 }
 
 @keyframes frog {
-    10% {
-        transform: scale(1.1);
-
+    0% {
+        background-color: red;
+        transform: translateY(0);
     }
 
-    20% {
-        transform: scale(1.2);
+
+    50% {
+        background-color: yellow;
+        transform: translateY(-20px);
     }
 
-    30% {
-        transform: scale(1.1);
+    100% {
+        background-color: green;
+        transform: translateY(0);
     }
 }
